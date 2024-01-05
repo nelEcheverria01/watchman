@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "watchman is a package that will reload its js file with every change you make.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lint": "standard"
   },
