@@ -22,7 +22,7 @@ describe('watcher', _ => {
 
     it(`should return an object, with the properties "watchedDir" and
         "runningFile", which should match the file passed by parameter`, _ => {
-      watcher(sampleFile.filename).on('watching', ({ watchedDir, runningFile }) => {
+      watcher(sampleFile.filename, { enableWatchmanLogs: false }).on('watching', ({ watchedDir, runningFile }) => {
         assert.equal(watchedDir, expected.dir)
         assert.equal(runningFile, expected.filename)
       })
