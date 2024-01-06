@@ -2,15 +2,34 @@
   "name": "watchman",
   "version": "1.0.0",
   "description": "watchman is a package that will reload its js file with every change you make.",
-  "main": "index.js",
+  "main": "lib/watchman.js",
   "type": "module",
   "scripts": {
     "lint": "standard",
     "test": "node --test",
     "coverage": "c8 npm run test"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nelEcheverria01/watchman.git"
+  },
+  "engines": {
+    "node": ">=18.19.0 || 20.10.0"
+  },
+  "keywords": [
+    "monitor",
+    "reload",
+    "load",
+    "restart",
+    "cli",
+    "monitor",
+    "development",
+    "autoreload",
+    "terminal",
+    "development-mode",
+    "dev mode"
+  ],
+  "author": "Nelson Echeverria <nelsonecheverria100@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "c8": "9.0.0",
