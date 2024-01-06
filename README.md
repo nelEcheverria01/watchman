@@ -10,13 +10,13 @@ It is worth mentioning that to carry out this project, the author was inspired b
 to start using watchman, in your projects you can use:
 
 ```bash
-npm i watchman --save-dev
+npm i @nelson_echeverria/watchman --save-dev
 ```
 
 or with shortcuts:
 
 ```bash
-npm i watchman -D
+npm i @nelson_echeverria/watchman -D
 ```
 
 # usage
@@ -27,7 +27,7 @@ to implement watchman in your project, you can call watchman as a function and p
 
 ```js
 // src/index.js
-import watchman from 'watchman'
+import watchman from '@nelson_echeverria/watchman'
 
 if(process.env.NODE_ENV === 'developement'){
     watchman('./app.js')
