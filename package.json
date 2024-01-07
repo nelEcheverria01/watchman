@@ -1,6 +1,6 @@
 {
   "name": "@nelson_echeverria/watchman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "watchman is a package that will reload its js file with every change you make.",
   "main": "lib/watchman.js",
   "type": "module",
