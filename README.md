@@ -20,6 +20,9 @@ or with shortcuts:
 npm i @nelson_echeverria/watchman -D
 ```
 
+# behavior
+watchman will observe the folder in which the file passed by parameter is located, ignoring everything outside of it.
+
 # usage
 to implement watchman in your project, you can call watchman as a function and pass it the file name you want to monitor.
 
