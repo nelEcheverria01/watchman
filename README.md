@@ -5,6 +5,7 @@ It is worth mentioning that to carry out this project, the author was inspired b
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![npm (scoped)](https://img.shields.io/npm/v/%40nelson_echeverria/watchman)
 
 # installation
 to start using watchman, in your projects you can use:
