@@ -26,12 +26,20 @@ watchman will observe the folder in which the file passed by parameter is locate
 # usage
 to implement watchman in your project, you can call watchman as a function and pass it the file name you want to monitor.
 
-> [!NOTE]
-> for now it only supports ECMAScript modules
+It would look something like this from **src/index.js**:
 
 ```js
-// src/index.js
+// ECMAScript modules
 import watchman from '@nelson_echeverria/watchman'
+
+if(process.env.NODE_ENV === 'developement'){
+    watchman('./app.js')
+}
+```
+
+```js
+// commonJS modules
+const watchman = require('@nelson_echeverria/watchman').default
 
 if(process.env.NODE_ENV === 'developement'){
     watchman('./app.js')
@@ -47,6 +55,7 @@ and look like this, into package.json:
     }
 }
 ```
+
 # example - wachman in action
 ![watchman output](./docs/watchman-output.png)
 
