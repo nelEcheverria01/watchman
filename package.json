@@ -7,7 +7,16 @@
   "scripts": {
     "lint": "standard",
     "test": "node --test",
-    "coverage": "c8 npm run test"
+    "coverage": "c8 npm run test",
+    "clean": "rm -rf lib/cjs",
+    "build-cjs": "mkdir lib/cjs && ascjs lib lib/cjs",
+    "lint-fix": "standard --fix",
+    "build": "npm run clean && npm run build-cjs && npm run lint-fix",
+    "prepack": "npm run build"
+  },
+  "exports":{
+    "import": "./lib/watchman.js",
+    "require": "./lib/cjs/watchman.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +41,7 @@
   "author": "Nelson Echeverria <nelsonecheverria100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ascjs": "6.0.3",
     "c8": "9.0.0",
     "standard": "17.1.0"
   },
