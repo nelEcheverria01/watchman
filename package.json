@@ -1,6 +1,6 @@
 {
   "name": "@nelson_echeverria/watchman",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "watchman is a package that will reload its js file with every change you make.",
   "main": "lib/watchman.js",
   "type": "module",
@@ -14,7 +14,7 @@
     "build": "npm run clean && npm run build-cjs && npm run lint-fix",
     "prepack": "npm run build"
   },
-  "exports":{
+  "exports": {
     "import": "./lib/watchman.js",
     "require": "./lib/cjs/watchman.js"
   },
